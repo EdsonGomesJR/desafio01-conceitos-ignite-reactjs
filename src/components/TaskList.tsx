@@ -1,9 +1,8 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 import "../styles/tasklist.scss";
 
 import { FiTrash, FiCheckSquare } from "react-icons/fi";
-import { render } from "@testing-library/react";
 
 interface Task {
   id: number;
@@ -23,7 +22,7 @@ export function TaskList() {
       title: newTaskTitle,
       isComplete: false,
     };
-    const data = [...tasks, novaTarefa];
+
     if (newTaskTitle.length <= 0) {
     } else {
       setTasks((oldState) => [...oldState, novaTarefa]);
