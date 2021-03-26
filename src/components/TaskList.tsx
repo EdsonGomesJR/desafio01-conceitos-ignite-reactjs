@@ -25,7 +25,6 @@ export function TaskList() {
     };
     const data = [...tasks, novaTarefa];
     if (newTaskTitle.length <= 0) {
-      console.log("Coloque um titulo para a tarefa!!");
     } else {
       setTasks((oldState) => [...oldState, novaTarefa]);
       setNewTaskTitle("");
